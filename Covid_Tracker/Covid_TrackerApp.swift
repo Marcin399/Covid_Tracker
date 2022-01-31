@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Covid_TrackerApp: App {
+    @StateObject var clasdata = Getdata()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(clasdata)
         }
     }
 }

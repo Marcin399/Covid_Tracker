@@ -14,6 +14,16 @@
 		D32005032790C19C00E0586C /* Covid_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005022790C19C00E0586C /* Covid_TrackerTests.swift */; };
 		D320050D2790C19C00E0586C /* Covid_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320050C2790C19C00E0586C /* Covid_TrackerUITests.swift */; };
 		D320050F2790C19C00E0586C /* Covid_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320050E2790C19C00E0586C /* Covid_TrackerUITestsLaunchTests.swift */; };
+		D320051C2790C2D400E0586C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320051B2790C2D400E0586C /* Home.swift */; };
+		D320051F2790C44700E0586C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320051E2790C44700E0586C /* Card.swift */; };
+		D32005212790C48A00E0586C /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005202790C48A00E0586C /* TabViewModel.swift */; };
+		D32005232790C52D00E0586C /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005222790C52D00E0586C /* CustomTabBar.swift */; };
+		D32005252790C57200E0586C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005242790C57200E0586C /* DetailView.swift */; };
+		D32005272790EAB800E0586C /* Data_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005262790EAB800E0586C /* Data_Model.swift */; };
+		D32005292790F5B700E0586C /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32005282790F5B700E0586C /* GetData.swift */; };
+		D320052B2794223E00E0586C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320052A2794223E00E0586C /* Country.swift */; };
+		D3C7A51427A58F0D00481701 /* SaveData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7A51227A58F0D00481701 /* SaveData.xcdatamodeld */; };
+		D3C7A51927A5904600481701 /* CoreDataMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7A51827A5904600481701 /* CoreDataMenager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,17 @@
 		D32005082790C19C00E0586C /* Covid_TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Covid_TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D320050C2790C19C00E0586C /* Covid_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_TrackerUITests.swift; sourceTree = "<group>"; };
 		D320050E2790C19C00E0586C /* Covid_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D320051B2790C2D400E0586C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D320051E2790C44700E0586C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D32005202790C48A00E0586C /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		D32005222790C52D00E0586C /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D32005242790C57200E0586C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D32005262790EAB800E0586C /* Data_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_Model.swift; sourceTree = "<group>"; };
+		D32005282790F5B700E0586C /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		D320052A2794223E00E0586C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		D3C7A51127A58C7100481701 /* Covid-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Covid-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D3C7A51327A58F0D00481701 /* SaveData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveData.xcdatamodel; sourceTree = "<group>"; };
+		D3C7A51827A5904600481701 /* CoreDataMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMenager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +95,7 @@
 		D32004E52790C19A00E0586C = {
 			isa = PBXGroup;
 			children = (
+				D3C7A51527A5901300481701 /* Menager */,
 				D32004F02790C19A00E0586C /* Covid_Tracker */,
 				D32005012790C19C00E0586C /* Covid_TrackerTests */,
 				D320050B2790C19C00E0586C /* Covid_TrackerUITests */,
@@ -94,9 +116,17 @@
 		D32004F02790C19A00E0586C /* Covid_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				D3C7A51127A58C7100481701 /* Covid-Tracker-Info.plist */,
+				D320051E2790C44700E0586C /* Card.swift */,
 				D32004F12790C19A00E0586C /* Covid_TrackerApp.swift */,
 				D32004F32790C19A00E0586C /* ContentView.swift */,
+				D32005202790C48A00E0586C /* TabViewModel.swift */,
+				D32005262790EAB800E0586C /* Data_Model.swift */,
+				D32005282790F5B700E0586C /* GetData.swift */,
+				D320052A2794223E00E0586C /* Country.swift */,
+				D320051D2790C32500E0586C /* View */,
 				D32004F52790C19B00E0586C /* Assets.xcassets */,
+				D3C7A51227A58F0D00481701 /* SaveData.xcdatamodeld */,
 				D32004F72790C19B00E0586C /* Preview Content */,
 			);
 			path = Covid_Tracker;
@@ -125,6 +155,24 @@
 				D320050E2790C19C00E0586C /* Covid_TrackerUITestsLaunchTests.swift */,
 			);
 			path = Covid_TrackerUITests;
+			sourceTree = "<group>";
+		};
+		D320051D2790C32500E0586C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D320051B2790C2D400E0586C /* Home.swift */,
+				D32005222790C52D00E0586C /* CustomTabBar.swift */,
+				D32005242790C57200E0586C /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3C7A51527A5901300481701 /* Menager */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7A51827A5904600481701 /* CoreDataMenager.swift */,
+			);
+			path = Menager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +306,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32004F42790C19A00E0586C /* ContentView.swift in Sources */,
+				D3C7A51427A58F0D00481701 /* SaveData.xcdatamodeld in Sources */,
+				D320051C2790C2D400E0586C /* Home.swift in Sources */,
 				D32004F22790C19A00E0586C /* Covid_TrackerApp.swift in Sources */,
+				D32005252790C57200E0586C /* DetailView.swift in Sources */,
+				D320051F2790C44700E0586C /* Card.swift in Sources */,
+				D32005272790EAB800E0586C /* Data_Model.swift in Sources */,
+				D32005232790C52D00E0586C /* CustomTabBar.swift in Sources */,
+				D32005212790C48A00E0586C /* TabViewModel.swift in Sources */,
+				D320052B2794223E00E0586C /* Country.swift in Sources */,
+				D3C7A51927A5904600481701 /* CoreDataMenager.swift in Sources */,
+				D32005292790F5B700E0586C /* GetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +479,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Covid_Tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Covid-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +508,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Covid_Tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Covid-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -599,6 +659,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3C7A51227A58F0D00481701 /* SaveData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3C7A51327A58F0D00481701 /* SaveData.xcdatamodel */,
+			);
+			currentVersion = D3C7A51327A58F0D00481701 /* SaveData.xcdatamodel */;
+			path = SaveData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D32004E62790C19A00E0586C /* Project object */;
 }

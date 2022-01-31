@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    @Namespace var animation
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+//Home(animation: animation)
+        CustomTabBar()
     }
 }
 
