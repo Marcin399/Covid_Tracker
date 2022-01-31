@@ -40,7 +40,8 @@ struct Home: View {
                         .font(.system(size: 25))
                         .frame(width: UIScreen.main.bounds.width - UIScreen.main.bounds.width/6.5,alignment: .center)
                         .foregroundColor(Color.red)
-                        .offset(x: -5, y: -2)
+                        .offset(x: 0, y: -2)
+                        .padding(.leading, 30)
                 
                 }.padding(.bottom)
             }
@@ -76,7 +77,14 @@ struct Home: View {
                                         
                                         
                                         Text("cases")
-                                            .padding(1)
+                                            .padding(0.5)
+                                            .font(.system(size: 17, weight: .bold))
+                                        
+                                       Rectangle()
+                                            .frame(width: UIScreen.main.bounds.width/12 - 10, height: 1)
+                                        
+                                            
+                                          
                                         Text("\(CasesData.highestTodayCasesValue)") //wypisywanie wartosci dla klucza
                                             .font(.system(size: 20, weight: .bold))
                                         Text("\(CasesData.highestTodayCasesCountry)") // wypisanie klucza czyli kraju
@@ -117,6 +125,10 @@ struct Home: View {
                                         Text("recover")
                                             .padding(1)
                                             .foregroundColor(Color.green)
+                                            .font(.system(size: 17, weight: .bold))
+                                        Rectangle()
+                                             .frame(width: UIScreen.main.bounds.width/12 - 10, height: 1)
+                                             .foregroundColor(Color.green)
                                         Text("\(CasesData.highestTodayRecoveredValue)")
                                             .font(.system(size: 20, weight: .bold))
                                             .foregroundColor(Color.green)
@@ -159,6 +171,11 @@ struct Home: View {
                                         Text("deadths")
                                             .padding(1)
                                             .foregroundColor(Color.red.opacity(0.7))
+                                            .font(.system(size: 17, weight: .bold))
+                                        Rectangle()
+                                             .frame(width: UIScreen.main.bounds.width/12 - 10, height: 1)
+                                             .foregroundColor(Color.red.opacity(0.7))
+                                        
                                         Text("\(CasesData.highestTodayDeadths[key]! )") //wypisywanie wartosci dla klucza
                                             .font(.system(size: 20, weight: .bold))
                                             .foregroundColor(Color.red.opacity(0.7))
@@ -188,7 +205,7 @@ struct Home: View {
                     
                     
                 
-                    if CasesData.todayCases.count > 0{
+                    if CasesData.todayCases.count > 1{
                         ForEach(CasesData.todayCases.sorted(by: { a, b in a.value > b.value }), id: \.value) { key, value in
                             
                             
@@ -283,8 +300,10 @@ struct Home: View {
                                             Button {
                                                 if  tabData.liked[key] == false || tabData.liked[key] == nil {
                                                     tabData.liked[key] = true
+                                                    CasesData.todayCases2[key] = value
                                                 }else{
                                                     tabData.liked[key] = false
+                                                    CasesData.todayCases2.removeValue(forKey: key)
                                                 }
                                                 
                                             }label: {

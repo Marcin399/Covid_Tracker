@@ -14,6 +14,7 @@ struct Covid_TrackerApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(clasdata)
+                
         }
     }
 }

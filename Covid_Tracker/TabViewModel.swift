@@ -9,7 +9,8 @@ import SwiftUI
 import CoreData
 
 class TabViewModel: ObservableObject {
-    
+    @Published var currentTab2 = "Home"
+      
     @Published var currentTab = "Home"
     
     // Detail Data...

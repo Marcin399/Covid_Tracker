@@ -20,15 +20,15 @@ struct CustomTabBar: View {
     
     var body: some View {
         
-        TabView(selection: $tabData.currentTab) {
+        TabView(selection: $tabData.currentTab2) {
             
             Home(animation: animation)
                 .environmentObject(tabData)
                 .tag("Home")
             
-            Text("Fallow")
-                .tag("Fallow")
-            
+            FallowView(animation: animation)
+                .environmentObject(tabData)
+                .tag("Follow")
             
         }
         .overlay(
@@ -37,7 +37,7 @@ struct CustomTabBar: View {
                 
                 TabBarButton(title: "Home", image: "house", animation: animation)
                 
-                TabBarButton(title: "Fallow", image: "heart", animation: animation)
+                TabBarButton(title: "Follow", image: "heart", animation: animation)
                 
                
             }
@@ -45,7 +45,7 @@ struct CustomTabBar: View {
                 .padding(.vertical,10)
                 .padding(.horizontal)
                 
-                .background(.ultraThinMaterial,in: Capsule())
+                .background(.thinMaterial,in: Capsule())
                 .padding(.horizontal,20)
                 .padding(.bottom,8)
             // Shadow...
@@ -89,7 +89,7 @@ struct TabBarButton: View{
         Button {
             
             withAnimation{
-                tabData.currentTab = title
+                tabData.currentTab2 = title
             }
             
         } label: {
@@ -104,7 +104,7 @@ struct TabBarButton: View{
                     .font(.caption.bold())
             }
             //.foregroundColor(Color.black)
-            .foregroundColor(tabData.currentTab == title ? Color("Tab") : .primary.opacity(0.5))
+            .foregroundColor(tabData.currentTab2 == title ? Color("Tab") : .primary.opacity(0.5))
             .frame(maxWidth: .infinity)
            
         }

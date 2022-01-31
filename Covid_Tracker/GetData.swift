@@ -10,6 +10,7 @@ import Combine
 
 class Getdata : ObservableObject{
     @Published var todayCases : [String:Int] = [:]
+    @Published var todayCases2 : [String:Int] = [:]
     @Published var todayDeadths : [String : Int] = [:]
     @Published var todayRecovered : [String:Int] = [:]
     @Published var countyList : [String] = []
@@ -19,7 +20,8 @@ class Getdata : ObservableObject{
     @Published var highestTodayRecovered : [String : Int] = [:]
     @Published var allTodayCases : Int = 0
     @Published var population : [String : Int] = [:]
-    
+    @Published var cases : [String : Int] = [:]
+    @Published var active : [String : Int] = [:]
     @Published var highestTodayCasesValue : Int = 0
     @Published var highestTodayDeadthsValue : Int = 0
     @Published var highestTodayRecoveredValue : Int = 0
@@ -57,7 +59,9 @@ class Getdata : ObservableObject{
                 let cases = json.todayCases
                 let deaths = json.todayDeaths
                 let recovered = json.todayRecovered
+                let cases2 = json.cases
                 let flagURL = json.countryInfo.flag
+                let active = json.active
                 print(flagURL)
                 
                 
@@ -67,9 +71,13 @@ class Getdata : ObservableObject{
                     return
                 }else{
                     self.todayCases[putcountry] = cases
+                   // self.todayCases2[putcountry] = cases
                     self.todayDeadths[putcountry] = deaths
                     self.todayRecovered[putcountry] = recovered
                     self.population[putcountry] = json.population
+                    self.cases[putcountry] = cases2
+                    self.active[putcountry] = active
+                    
                     var highestTodayCases = self.todayCases.max { a, b in a.value < b.value }
                     self.highestTodayCases.removeAll()
                     self.highestTodayCases[highestTodayCases?.key as! String] = highestTodayCases?.value
