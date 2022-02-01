@@ -205,7 +205,7 @@ var countryList = [
 
     "UAE",
     "UK",
-   // "USA",
+    "USA",
     "Uganda",
     "Ukraine",
     "Uruguay",

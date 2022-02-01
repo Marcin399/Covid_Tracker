@@ -90,8 +90,6 @@ struct Home: View {
                                         Text("\(CasesData.highestTodayCasesCountry)") // wypisanie klucza czyli kraju
                                         
                                     }
-                                    
-                                    
                                 }
                             }
                         }

@@ -24,6 +24,7 @@
 		D320052B2794223E00E0586C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D320052A2794223E00E0586C /* Country.swift */; };
 		D3C7A51427A58F0D00481701 /* SaveData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3C7A51227A58F0D00481701 /* SaveData.xcdatamodeld */; };
 		D3C7A51927A5904600481701 /* CoreDataMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7A51827A5904600481701 /* CoreDataMenager.swift */; };
+		D3C7A51B27A86D2D00481701 /* FallowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7A51A27A86D2D00481701 /* FallowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		D3C7A51127A58C7100481701 /* Covid-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Covid-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D3C7A51327A58F0D00481701 /* SaveData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveData.xcdatamodel; sourceTree = "<group>"; };
 		D3C7A51827A5904600481701 /* CoreDataMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMenager.swift; sourceTree = "<group>"; };
+		D3C7A51A27A86D2D00481701 /* FallowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,6 @@
 		D32004E52790C19A00E0586C = {
 			isa = PBXGroup;
 			children = (
-				D3C7A51527A5901300481701 /* Menager */,
 				D32004F02790C19A00E0586C /* Covid_Tracker */,
 				D32005012790C19C00E0586C /* Covid_TrackerTests */,
 				D320050B2790C19C00E0586C /* Covid_TrackerUITests */,
@@ -116,6 +117,7 @@
 		D32004F02790C19A00E0586C /* Covid_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				D3C7A51527A5901300481701 /* Menager */,
 				D3C7A51127A58C7100481701 /* Covid-Tracker-Info.plist */,
 				D320051E2790C44700E0586C /* Card.swift */,
 				D32004F12790C19A00E0586C /* Covid_TrackerApp.swift */,
@@ -163,6 +165,7 @@
 				D320051B2790C2D400E0586C /* Home.swift */,
 				D32005222790C52D00E0586C /* CustomTabBar.swift */,
 				D32005242790C57200E0586C /* DetailView.swift */,
+				D3C7A51A27A86D2D00481701 /* FallowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				D320051F2790C44700E0586C /* Card.swift in Sources */,
 				D32005272790EAB800E0586C /* Data_Model.swift in Sources */,
 				D32005232790C52D00E0586C /* CustomTabBar.swift in Sources */,
+				D3C7A51B27A86D2D00481701 /* FallowView.swift in Sources */,
 				D32005212790C48A00E0586C /* TabViewModel.swift in Sources */,
 				D320052B2794223E00E0586C /* Country.swift in Sources */,
 				D3C7A51927A5904600481701 /* CoreDataMenager.swift in Sources */,
